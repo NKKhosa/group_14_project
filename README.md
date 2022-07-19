@@ -42,7 +42,6 @@ As also visualized in the Data_pipeline.png flowchart in the Resourcecs/ folder,
 
 ### Output 
 - Credit_Score
-- The possibility of approval for a loan
 
 ## Additional research approach:
 
