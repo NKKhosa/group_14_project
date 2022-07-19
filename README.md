@@ -3,7 +3,7 @@
 ## Data
 - Credit score data set with 28 columns was sourced from kaggle.
 
-## Proposed findings and a hypothesis of results (ie business problem contextualized with data driven results)
+## Proposed findings and a hypothesis of results
 Credit scores are a universal metric, used by companies and individuals alike, in various areas of life to make decisions. With this dataset, we hope to perform a deep learning classification analysis of the data to determine whether we can predict if an individual will have a good or bad credit score based on the input features provided.
 
 ## Machine Learning Model
