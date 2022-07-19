@@ -43,6 +43,3 @@ As also visualized in the Data_pipeline.png flowchart in the Resourcecs/ folder,
 ### Output 
 - Credit_Score
 
-## Additional research approach:
-
-Further more we will attempt to evaluate how likely the customer will get the approval of the loan on the basis credit score. 
