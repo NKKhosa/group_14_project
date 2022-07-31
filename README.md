@@ -40,6 +40,8 @@ As also visualized in the Data_pipeline.png flowchart in the Resourcecs/ folder,
 - Payment_Behaviour
 - Monthly_Balance
 
+[Tableau Visualization](https://public.tableau.com/views/Credit_Analysis_16590381137970/AnnInc-Age?:language=en-US&:display_count=n&:origin=viz_share_link)
+
 ### Output 
 - Credit_Score
 
