@@ -1,5 +1,0 @@
-Database Name:  CreditScoreAnalysis
-password: credit1234
-
-Endpoint:  creditreport.cvvccrp8oiue.us-east-2.rds.amazonaws.com
-Port: 5432
