@@ -43,7 +43,7 @@ A credit score can considerably influence your economic existence. It plays a ke
 
 ## The Technology that is been Used:
 
-
+![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Presentation/PNG%20file/Technology_Used.jpg)
 
 ## The Affecting Factors:
 
@@ -56,6 +56,27 @@ A credit score can considerably influence your economic existence. It plays a ke
 # Tableau Visualization 
 
  From the current Dataset we have generated some visualizations which leads to better understanding of the data. 
+ 
+ 
+ ### Payment History in terms of the Age and Annual Income:
+ 
+ ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Payment%20History.png)
+ 
+ ### Credit Utilization in respect to Outstanding Debt:
+ 
+ ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Credit_Utilization.png)
+ 
+ ### Number of Credit Inquiries in terms of Change Credit Limit.
+ 
+ ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Credit_Utilization.png)
+ 
+ ### Number of the Annual income to the Outstanding Debt.
+ 
+ ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/AnnInc-Debt.png)
+ 
+ ### No of the Loans in terms of Annual Income 
+ 
+ ![]()
  
 
 
