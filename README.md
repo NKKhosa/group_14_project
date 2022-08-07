@@ -15,10 +15,35 @@ A credit score can considerably influence your economic existence. It plays a ke
 
 ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Presentation/PNG%20file/Description_of_Data.jpg)
 
+#### Input Features
+- Month 
+- Age 
+- Occupation 
+- Annual_Income
+- Monthly_InHand_Salary
+- Num_Bank_Accounts
+- Num_Credit_Card
+- Interest_Rate
+- Num_Loan
+- Type_of_Loan
+- Delay_from_due_date
+- Num_of_Delayed_Payment
+- Changed_Credit_Limit
+- Num_Credit_Inquiries
+- Credit_Mix
+- Outstanding_Debt
+- Credit_Utilization_Ratio
+- Credit_History_Age
+- Payment_of_Min_Amount
+- Total_EMI_per_month
+- Amount_invested_monthly 
+- Payment_Behaviour
+- Monthly_Balance
+
 
 ## The Technology that is been Used:
 
-![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Presentation/PNG%20file/Technology_Used.jpg)
+
 
 ## The Affecting Factors:
 
@@ -30,7 +55,8 @@ A credit score can considerably influence your economic existence. It plays a ke
 
 # Tableau Visualization 
 
-The visualization is addition 
+ From the current Dataset we have generated some visualizations which leads to better understanding of the data. 
+ 
 
 
  
@@ -62,30 +88,7 @@ A new column was created and added to the DataFrame by dividing the Outstanding_
 ### Feature Selection
 Only the identification columns were left out of feature selection as they do not provide any analytical power.
 The target column was Credit_Score.
-#### Input Features
-- Month 
-- Age 
-- Occupation 
-- Annual_Income
-- Monthly_InHand_Salary
-- Num_Bank_Accounts
-- Num_Credit_Card
-- Interest_Rate
-- Num_Loan
-- Type_of_Loan
-- Delay_from_due_date
-- Num_of_Delayed_Payment
-- Changed_Credit_Limit
-- Num_Credit_Inquiries
-- Credit_Mix
-- Outstanding_Debt
-- Credit_Utilization_Ratio
-- Credit_History_Age
-- Payment_of_Min_Amount
-- Total_EMI_per_month
-- Amount_invested_monthly 
-- Payment_Behaviour
-- Monthly_Balance
+
 
 ### Training and Testing
 Prior to scaling, the data was split into features and target, then train_test_split was used from the sklearn library to split the features and target into a training and testing set, which was stratified.
