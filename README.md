@@ -11,37 +11,12 @@ Credit scores are a universal metric, used by companies and individuals alike, i
 A credit score can considerably influence your economic existence. It plays a key function in a lender's decision to offer you credit. People accompanying credit scores beneath 640, e.g., are mainly deliberate expected subprime borrowers. Lending organizations frequently charge interest on subprime mortgages at a rate above a unoriginal mortgage to offset themselves from bearing more risk. They grant permissions like demanding a smaller compensation term or a co-signer for borrowers accompanying a low credit score
 
 
-## The Data that is been fetch as Raw has: 
+## The Raw Data: 
 
 ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Presentation/PNG%20file/Description_of_Data.jpg)
 
-#### Input Features
-- Month 
-- Age 
-- Occupation 
-- Annual_Income
-- Monthly_InHand_Salary
-- Num_Bank_Accounts
-- Num_Credit_Card
-- Interest_Rate
-- Num_Loan
-- Type_of_Loan
-- Delay_from_due_date
-- Num_of_Delayed_Payment
-- Changed_Credit_Limit
-- Num_Credit_Inquiries
-- Credit_Mix
-- Outstanding_Debt
-- Credit_Utilization_Ratio
-- Credit_History_Age
-- Payment_of_Min_Amount
-- Total_EMI_per_month
-- Amount_invested_monthly 
-- Payment_Behaviour
-- Monthly_Balance
 
-
-## The Technology that is been Used:
+## The Technology Used:
 
 ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Presentation/PNG%20file/Technology_Used.jpg)
 
@@ -49,7 +24,7 @@ A credit score can considerably influence your economic existence. It plays a ke
 
 ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Presentation/PNG%20file/Factors_that_affects.jpg)
 
-## The initial flow of the project:
+## The Initial Flow of the Project:
 
 ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Presentation/PNG%20file/The_Initial_Flow.jpg)
 
@@ -60,44 +35,51 @@ A credit score can considerably influence your economic existence. It plays a ke
  [Tableau Visualization](https://public.tableau.com/views/Credit_Analysis_16590381137970/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
  
  
- ### Payment History in terms of the Age and Annual Income:
+ ### Payment History in Terms of the Age and Annual Income:
  
  ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Payment%20History.png)
  
- ### Credit Utilization in respect to Outstanding Debt:
+ ### Credit Utilization vs. Outstanding Debt:
  
  ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Credit_Utilization.png)
  
- ### Number of Credit Inquiries in terms of Change Credit Limit.
+ ### Number of Credit Inquiries vs. Change Credit Limit.
  
  ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Credit_Utilization.png)
  
- ### Number of the Annual income to the Outstanding Debt.
+ ### Annual Income vs. Outstanding Debt.
  
  ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/AnnInc-Debt.png)
  
- ### No of the Loans in terms of Annual Income 
+ ### Number of  Loans vs. Annual Income 
  
  ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/NoofLoans.jpg)
  
- ### Income in respect to outstanding debt.
+ ### Income vs. outstanding debt.
  
  ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Income-OustandingDebt.png)
  
- ### The Credit mix impacting factors.
+ ### The Credit Mix Impacting Factors.
  
  ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Credit_Mix.png)
  
- ### The EMI per month in respect to the delay per month factor. 
+ ### The EMI per Month vs. Delay per Month. 
  
  ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Total_EMI.png)
  
  
 
 ## Machine Learning Model
-As also visualized in the Data_pipeline.png flowchart in the Resourcecs/ folder, we will create a supervised deep learning model to classify the individuals in into 2 groups: 
-- Good credit, and
+### Initail Neural Net Model
+As also visualized in the Data_pipeline.png flowchart in the Resourcecs/ folder, we initially created a supervised deep learning model to classify the individuals in into 3 groups: 
+- Good credit, 
+- Standard credit, and
 - Bad credit
+
+However, this model did not prodce favorable results, and nor did the model run on a reduced binary classification. This is likely due to the high level of null values in the data set which once removed, resulted in a significantly smaller training set. This caused the neural net to overfit and perform poorly on the testing set.
+
+### Tree-Based Models
+Tree based models performed the best on this data set with higher accuracy. RandomTreeClassifier, XGBoost Classifier and LightGBM Classifier were used. LightGBM showed the best results.
 
 ### Data Preprocessing
 Data was preprocessed using Python in Jupyter Notebook.
@@ -116,12 +98,39 @@ The second set had 1 target column which had 2 possible values:
 
 ### Feature Engineering
 During exploratory analysis a relationship between the Outstanding Debt and Annual Income columns was shown to indicate credit score quality on some level.
-A new column was created and added to the DataFrame by dividing the Outstanding_Debt column by the Annual_Income column.
+A new column was created and added to the DataFrame by dividing the Outstanding_Debt column by the Annual_Income column and setting this ratio as the value.
 
 ### Feature Selection
-Only the identification columns were left out of feature selection as they do not provide any analytical power.
-The target column was Credit_Score.
+The identification columns were left out of feature selection as they do not provide any analytical power.
 
+#### Input Features
+- Month 
+- Age 
+- Occupation 
+- Annual_Income
+- Monthly_InHand_Salary
+- Num_Bank_Accounts
+- Num_Credit_Card
+- Interest_Rate
+- Num_Loan
+- Delay_from_due_date
+- Num_of_Delayed_Payment
+- Changed_Credit_Limit
+- Num_Credit_Inquiries
+- Credit_Mix
+- Outstanding_Debt
+- Credit_Utilization_Ratio
+- Credit_History_Age
+- Payment_of_Min_Amount
+- Total_EMI_per_month
+- Amount_invested_monthly 
+- Payment_Behaviour
+- Monthly_Balance
+
+* The Type_of_Loan column was removed because the majority of its values were 'No Data' or 'Not Specified' and 'Other'. It was decided that this column was not informative.
+
+#### Output 
+- Credit_Score
 
 ### Training and Testing
 Prior to scaling, the data was split into features and target, then train_test_split was used from the sklearn library to split the features and target into a training and testing set, which was stratified.
@@ -156,10 +165,28 @@ We decided to collapse the ‘Standard’ category for Credit_Score into the ‘
   - Did not perform as well as the RandomForest model, likely due to overfitting  
   - Took a long time to run
 
+Next, more tree-based models were tried as the RandomForest Classifier had the highest accuracy so far.
+- XgBoost
+  - 58.3% accuracy for the multi-class output
+  - 94.7% accuracy for the binary classification
+
+- LightGBM
+  - Training accuracy: 73.8 %
+  - Testing accuracy: 71.7%
+  - Feature Importance:
+    - Top 5 Features were:
+      - Interest_Rate
+      - Outstanding_Debt
+      - Total_EMI_per_Month
+      - Credit_History_Age
+      - Changed_Credit_Limit
+  - Loss
+    - 
+  - Confusion Matrix
+    -
+    -
+      
 
 
 
-
-### Output 
-- Credit_Score
 
