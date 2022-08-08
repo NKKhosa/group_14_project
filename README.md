@@ -187,9 +187,7 @@ Next, more tree-based models were tried as the RandomForest Classifier had the h
     - ![](https://github.com/NKKhosa/group_14_project/blob/main/Resources/lgbm_confusion_matrix_visual.png)
     
     
-    
-    ### Please check out our presentation on : 
-[Credit Analysis PPT](https://docs.google.com/presentation/d/1rO1Qn5uUvHPm8TPr4-q_1kWlEu3WcnBhsWgwHcXXBaw/edit#slide=id.g14365d3e329_1_24)
+### Please check out our presentation on : [Credit Analysis PPT](https://docs.google.com/presentation/d/1rO1Qn5uUvHPm8TPr4-q_1kWlEu3WcnBhsWgwHcXXBaw/edit#slide=id.g14365d3e329_1_24)
       
 
 
