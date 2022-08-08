@@ -163,3 +163,7 @@ We decided to collapse the ‘Standard’ category for Credit_Score into the ‘
 ### Output 
 - Credit_Score
 
+
+### please check out our presentation on : 
+[Credit Analysis PPT](https://docs.google.com/presentation/d/1rO1Qn5uUvHPm8TPr4-q_1kWlEu3WcnBhsWgwHcXXBaw/edit#slide=id.g14365d3e329_1_24)
+
