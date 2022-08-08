@@ -57,7 +57,7 @@ A credit score can considerably influence your economic existence. It plays a ke
 
  From the current Dataset we have generated some visualizations which leads to better understanding of the data. 
  
- [Tableau Visualization](https://public.tableau.com/views/Credit_Analysis_16590381137970/AnnInc-Age?:language=en-US&:display_count=n&:origin=viz_share_link)
+ [Tableau Visualization](https://public.tableau.com/views/Credit_Analysis_16590381137970/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
  
  
  ### Payment History in terms of the Age and Annual Income:
