@@ -181,10 +181,10 @@ Next, more tree-based models were tried as the RandomForest Classifier had the h
       - Credit_History_Age
       - Changed_Credit_Limit
   - Loss
-    - 
+    - ![](https://github.com/NKKhosa/group_14_project/blob/main/Resources/lgbm_logloss_metric.png)
   - Confusion Matrix
-    -
-    -
+    -![](https://github.com/NKKhosa/group_14_project/blob/main/Resources/lgbm_confusion_matrix_table.png)
+    -![](https://github.com/NKKhosa/group_14_project/blob/main/Resources/lgbm_confusion_matrix_visual.png)
       
 
 
