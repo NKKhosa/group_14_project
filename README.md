@@ -76,10 +76,20 @@ A credit score can considerably influence your economic existence. It plays a ke
  
  ### No of the Loans in terms of Annual Income 
  
- ![]()
+ ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/NoofLoans.jpg)
  
-
-
+ ### Income in respect to outstanding debt.
+ 
+ ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Income-OustandingDebt.png)
+ 
+ ### The Credit mix impacting factors.
+ 
+ ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Credit_Mix.png)
+ 
+ ### The EMI per month in respect to the delay per month factor. 
+ 
+ ![](https://github.com/NKKhosa/group_14_project/blob/urvish_segment3/Resources/Tableau/Total_EMI.png)
+ 
  
 
 ## Machine Learning Model
