@@ -174,6 +174,7 @@ Next, more tree-based models were tried as the RandomForest Classifier had the h
   - Training accuracy: 73.8 %
   - Testing accuracy: 71.7%
   - Feature Importance:
+    - ![](https://github.com/NKKhosa/group_14_project/blob/main/Resources/lgbm_feature_importance.png)
     - Top 5 Features were:
       - Interest_Rate
       - Outstanding_Debt
