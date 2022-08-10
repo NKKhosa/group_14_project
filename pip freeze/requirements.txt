@@ -1,0 +1,14 @@
+# Import dependencies
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler,OneHotEncoder
+import pandas as pd
+import tensorflow as tf
+import os
+from tensorflow.keras.callbacks import ModelCheckpoint
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+from sklearn import metrics
+from sqlalchemy import create_engine
+from sqlalchemy import inspect
+from config import password 
